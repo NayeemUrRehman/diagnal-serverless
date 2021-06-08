@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: notes-api
+service: diagnal-api
 
 # Create an optimized package for our functions 
 package:
@@ -24,15 +24,9 @@ provider:
   #  SAMPLE_ENV_VAR: ${env:SAMPLE_ENV_VAR}
 
 functions:
-  hello:
-    handler: handler.hello
+ getData:
+    handler: getData.main
     events:
       - http:
-          path: hello
-          method: get
-  mello:
-    handler: handler.mello
-    events:
-      - http:
-          path: mello
-          method: get
+          path: get-json
+          method: post
