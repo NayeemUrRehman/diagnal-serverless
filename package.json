@@ -1,8 +1,8 @@
 {
-  "name": "diagnal-api",
+  "name": "notes-api",
   "version": "2.2.0",
   "description": "A Node.js starter for Serverless Framework with ES6 and TypeScript support",
-  "main": "getData.js",
+  "main": "handler/hello.js",
   "scripts": {
     "test": "serverless-bundle test"
   },
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "metadata-scraper": "^0.2.24",
+    "stripe": "^8.163.0",
     "uuid": "^7.0.3"
   }
 }
